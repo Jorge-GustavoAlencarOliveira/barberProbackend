@@ -1,32 +1,3 @@
-// import multer from 'multer';
-// import uploadConfig from './config/multer';
-
-// const upload = multer(uploadConfig.upload('./tmp'));
-
-// // ROTAS USER
-// router.post('/users', new CreateUserController().handle);
-// router.post('/session', new AuthUserController().handle);
-// router.get('/me', isAuthenticated ,new DetailUserController().handle)
-
-// // ROTAS CATEGORIAS
-// router.post('/category', isAuthenticated, new CreateCategoryController().handle);
-// router.get('/category', isAuthenticated, new ListCategoryController().handle)
-
-// //ROTAS PRODUTOS
-// router.post('/products', isAuthenticated, upload.single('file'), new CreateProductController().handle);
-// router.get('/products', isAuthenticated, new ListByCategoryController().handle)
-
-// //ROTAS ORDENS
-// router.post('/orders', isAuthenticated, new CreateOrderController().handle)
-// router.delete('/orders/delete', isAuthenticated, new DeleteOrderController().handle)
-// router.post('/orders/items', isAuthenticated, new AddItemController().handle)
-// router.delete('/orders/items/delete', isAuthenticated, new DeleteItemController().handle)
-// router.put('/orders/update', isAuthenticated, new SendOrderController().handle)
-// router.get('/orders/list', isAuthenticated, new ListOrderController().handle)
-// router.get('/orders/detail', isAuthenticated, new DetailOrderController().handle)
-// router.put('/orders/close', isAuthenticated, new CloseOrderController().handle)
-
-// export {router};
 import {Router} from "express"
 import { CreateUserController } from './controllers/user/CreateUserController';
 import { AuthUserController } from './controllers/user/AuthUserController';
